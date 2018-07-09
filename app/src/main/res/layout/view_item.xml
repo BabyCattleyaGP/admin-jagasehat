@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/layout_user"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:clickable="true">
+
+    <!--Age-->
+    <RelativeLayout
+        android:id="@+id/circle_age"
+        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp">
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/circle"/>
+
+        <TextView
+            android:id="@+id/text_age"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:text="19"
+            android:textColor="#fff"
+            android:textAlignment="center"
+            android:gravity="center_vertical"
+            android:textSize="18sp"
+            android:layout_centerVertical="true"
+            android:layout_margin="8dp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="8dp"
+        android:layout_toRightOf="@id/circle_age">
+
+        <!--Email-->
+        <TextView
+            android:id="@+id/text_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="24sp"
+            android:textColor="@color/textPrimary"
+            android:text="User Email" />
+
+        <!--Kerja-->
+        <TextView
+            android:id="@+id/text_job"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="Pekerjaan : "/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
