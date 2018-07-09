@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity"
+    android:layout_centerHorizontal="true"
+    android:paddingTop="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical">
+
+    <!--User Email-->
+    <LinearLayout
+        style="@style/detail_layout">
+
+        <!--Icon-->
+        <ImageView
+            android:id="@+id/im_email"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/ic_outline_email_24px"
+            android:layout_width="32dp"
+            android:layout_height="32dp" />
+
+        <!--email-->
+        <TextView
+            android:id="@+id/email"
+            style="@style/detail_text"
+            android:text="email@mail.com"/>
+    </LinearLayout>
+
+
+    <!--User Umur-->
+    <LinearLayout
+        style="@style/detail_layout">
+
+        <!--Icon-->
+        <ImageView
+            android:id="@+id/im_umur"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/ic_outline_calendar_today_24px"
+            android:layout_width="32dp"
+            android:layout_height="32dp" />
+
+        <!--umur-->
+        <TextView
+            android:id="@+id/umur"
+            style="@style/detail_text"
+            android:text="19 tahun"/>
+
+    </LinearLayout>
+
+    <!--User jk-->
+    <LinearLayout
+        style="@style/detail_layout">
+
+        <!--Icon-->
+        <ImageView
+            android:id="@+id/im_jk"
+            android:layout_marginLeft="4dp"
+            android:background="@drawable/ic_gender"
+            android:layout_width="32dp"
+            android:layout_height="32dp" />
+
+        <!--jk-->
+        <TextView
+            android:id="@+id/jk"
+            style="@style/detail_text"
+            android:text="Laki-laki"/>
+
+    </LinearLayout>
+
+    <!--User kerja-->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <!--Icon-->
+        <ImageView
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:id="@+id/im_kerja"
+            android:background="@drawable/ic_outline_home_24px"
+            android:layout_marginLeft="4dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp" />
+
+        <!--kerja-->
+        <TextView
+            android:id="@+id/kerja"
+            android:layout_toRightOf="@id/im_kerja"
+            style="@style/detail_text"
+            android:text="Pengangguran"/>
+
+    </RelativeLayout>
+
+
+    <!--User pendidikan-->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <!--Icon-->
+        <ImageView
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:id="@+id/im_pendidikan"
+            android:background="@drawable/ic_outline_home_24px"
+            android:layout_marginLeft="4dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp" />
+
+        <!--pendidikan-->
+        <TextView
+            android:id="@+id/pendidikan"
+            android:layout_toRightOf="@id/im_pendidikan"
+            style="@style/detail_text"
+            android:text="Magister"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

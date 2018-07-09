@@ -19,7 +19,6 @@ public class MainActivity extends AppCompatActivity{
         private RecyclerView recylerView;
         private List<UserModel> result;
         private UserAdapter adapter;
-
         private FirebaseDatabase database;
         private DatabaseReference reference;
 
@@ -42,7 +41,7 @@ public class MainActivity extends AppCompatActivity{
             recylerView.setLayoutManager(lin);
 
 
-            adapter = new UserAdapter(result);
+            adapter = new UserAdapter(MainActivity.this, result);
             recylerView.setAdapter(adapter);
 
             updateList();
