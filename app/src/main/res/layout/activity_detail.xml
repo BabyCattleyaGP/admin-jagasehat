@@ -18,7 +18,7 @@
         <ImageView
             android:id="@+id/im_email"
             android:layout_marginLeft="3dp"
-            android:background="@drawable/ic_outline_email_24px"
+            android:background="@drawable/ic_email"
             android:layout_width="32dp"
             android:layout_height="32dp" />
 
@@ -38,7 +38,7 @@
         <ImageView
             android:id="@+id/im_umur"
             android:layout_marginLeft="3dp"
-            android:background="@drawable/ic_outline_calendar_today_24px"
+            android:background="@drawable/ic_age"
             android:layout_width="32dp"
             android:layout_height="32dp" />
 
@@ -83,7 +83,7 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
             android:id="@+id/im_kerja"
-            android:background="@drawable/ic_outline_home_24px"
+            android:background="@drawable/ic_job"
             android:layout_marginLeft="4dp"
             android:layout_width="32dp"
             android:layout_height="32dp" />
@@ -111,7 +111,7 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
             android:id="@+id/im_pendidikan"
-            android:background="@drawable/ic_outline_home_24px"
+            android:background="@drawable/ic_education"
             android:layout_marginLeft="4dp"
             android:layout_width="32dp"
             android:layout_height="32dp" />
