@@ -11,8 +11,6 @@ import android.widget.TextView;
 import java.util.List;
 
 import android.support.annotation.NonNull;
-import java.util.ArrayList;
-import java.util.Map;
 
 
 
@@ -35,6 +33,7 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.UserViewHolder
     @Override
     public void onBindViewHolder (@NonNull UserViewHolder holder, int position){
         UserModel user = list.get(position);
+
 
         holder.textEmail.setText(user.emailUser);
         holder.textAge.setText(user.usiaUser + "");
